@@ -1,0 +1,24 @@
+{
+  "name": "wikidot.js",
+  "version": "0.1.0",
+  "description": "Accessing most of wikidot's functionality via AJAX requests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joch2520/wikidot.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joch2520/wikidot.js/issues"
+  },
+  "homepage": "https://github.com/Joch2520/wikidot.js#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "got": "^11.8.0"
+  }
+}
