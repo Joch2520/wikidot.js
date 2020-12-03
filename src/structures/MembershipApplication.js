@@ -6,6 +6,7 @@ class MembershipApplication {
   constructor(data) {
     this.text = data.text;
     this.user = new User(data.username);
+    this.wiki = data.wiki;
   };
 
   /**
@@ -15,7 +16,7 @@ class MembershipApplication {
    * @return {Promise<Boolean>}     Successful or not.
    */
   async accept(decision=true, reason='') {
-    let res = await this.action("ManageSiteMembershipAction", {
+    let res = await this.wiki.action("ManageSiteMembershipAction", {
       event: "acceptApplication",
       user_id: this.user.id,
       text: reason ? reason : "",

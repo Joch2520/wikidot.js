@@ -98,6 +98,7 @@ class Wiki {
         user_id: split[1],
         username: split[2].substring(1,split[2].length-1),
         text: '',
+        wiki: this,
       }));
     });
     return users;
